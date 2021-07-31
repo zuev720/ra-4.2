@@ -1,0 +1,29 @@
+.FitnessTable {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+    border-radius: 20px;
+}
+
+.FitnessTable > thead > tr > th {
+    padding: 20px 0 30px 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.TableBody {
+    box-shadow: 0 0 0 1px #7f7f7f;
+    border-radius: 20px;
+
+}
+
+.rowTable > th {
+    padding: 10px;
+}
+
+.FitnessTableButton {
+    border: none;
+    margin-left: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
