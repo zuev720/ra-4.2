@@ -18,6 +18,8 @@ export function FitnessTable(props) {
 
     const editFitness = (e) => {
         const date = e.target.closest('.rowTable').firstChild.textContent;
+        const editElementIndex = props.fitness.findIndex((elem) => elem.date === date);
+        props.setEditFitnessIndex(editElementIndex);
         const fitnessMatch = fitness.find((elem) => elem.date === date);
         e.target.closest('.FitnessTracking').firstChild.date.value = fitnessMatch.date;
         e.target.closest('.FitnessTracking').firstChild.kilometers.value = fitnessMatch.kilometers;
